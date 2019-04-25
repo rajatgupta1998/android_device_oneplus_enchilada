@@ -18,17 +18,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from enchilada device
-$(call inherit-product, device/oneplus/enchilada/device.mk)
+# Inherit from fajita device
+$(call inherit-product, device/oneplus/fajita/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit Candy product configuration
+$(call inherit-product, vendor/candy/config/common_full_phone.mk)
 
-# Maintainer Prop
-PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Anirudh Gupta"
-
-PRODUCT_NAME := aosip_enchilada
+PRODUCT_NAME := candy_enchilada
 PRODUCT_DEVICE := enchilada
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -38,6 +34,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 TARGET_VENDOR_PRODUCT_NAME := OnePlus6
 TARGET_VENDOR_DEVICE_NAME := OnePlus6
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.candy.maintainer="NoSpamDan"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=OnePlus6 \
