@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from fajita device
-$(call inherit-product, device/oneplus/fajita/device.mk)
+# Inherit from enchilada device
+$(call inherit-product, device/oneplus/enchilada/device.mk)
 
 # Inherit Candy product configuration
 $(call inherit-product, vendor/candy/config/common_full_phone.mk)
