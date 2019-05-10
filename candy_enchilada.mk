@@ -36,7 +36,7 @@ TARGET_VENDOR_PRODUCT_NAME := OnePlus6
 TARGET_VENDOR_DEVICE_NAME := OnePlus6
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.candy.maintainer="NoSpamDan"
+    ro.candy.maintainer="rajatgupta1998"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=OnePlus6 \
