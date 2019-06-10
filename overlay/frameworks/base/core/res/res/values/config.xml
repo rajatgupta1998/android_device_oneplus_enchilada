@@ -390,4 +390,8 @@
     <!-- Disable custom view for FOD -->
     <bool name="config_needCustomFODView">false</bool>
     <bool name="config_usesOnePlusFOD">false</bool>
+
+    <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
+    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
+
 </resources>
